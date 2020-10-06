@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/roomsInput"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="112dp"
+            android:ems="10"
+            android:hint="Number of Rooms per floor"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/parkingAreaInput"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Size of the Parking Area"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomsInput" />
+
+        <EditText
+            android:id="@+id/elevatorInput"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Number of Elevators"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parkingAreaInput" />
+
+        <EditText
+            android:id="@+id/bathInput"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Number of Bathrooms"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elevatorInput" />
+
+        <EditText
+            android:id="@+id/breakroomInput"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Number of Breakrooms"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bathInput" />
+
+        <Button
+            android:id="@+id/calcOfficeBtn"
+            android:layout_width="176dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="88dp"
+            android:onClick="loadMenuLayout"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakroomInput" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
